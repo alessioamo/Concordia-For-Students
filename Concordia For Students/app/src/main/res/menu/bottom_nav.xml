@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Me"
+        android:id="@+id/me"
+        android:icon="@drawable/baseline_person_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Moodle"
+        android:id="@+id/moodle"
+        android:icon="@drawable/baseline_school_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Campus"
+        android:id="@+id/campus"
+        android:icon="@drawable/baseline_home_24" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/baseline_settings_24"/>
+</menu>
