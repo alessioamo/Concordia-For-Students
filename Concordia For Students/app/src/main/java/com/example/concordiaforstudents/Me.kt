@@ -1,10 +1,14 @@
 package com.example.concordiaforstudents
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ListView
+import com.example.concordiaforstudents.adapters.CustomArrayAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +38,35 @@ class Me : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_me, container, false)
+        val view = inflater.inflate(R.layout.fragment_me, container, false)
+
+        val listView = view.findViewById<ListView>(R.id.list_view_me)
+        val names = arrayOf("Schedule", "Grades", "MyConcordia", "Task List", "Messages", "Account Details", "Account Balance")
+
+        val icons = arrayOf(
+            R.drawable.baseline_calendar_month_24,
+            R.drawable.baseline_percent_24,
+            R.drawable.baseline_web_24,
+            R.drawable.baseline_checklist_24,
+            R.drawable.baseline_message_24,
+            R.drawable.baseline_account_circle_24,
+            R.drawable.baseline_attach_money_24,
+            // Add more icon resource IDs as needed
+        )
+
+        val customAdapter = CustomArrayAdapter(requireActivity(), R.layout.list_item, names, icons)
+        listView.adapter = customAdapter
+
+//        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
+//            requireActivity(), R.layout.list_item, names
+//        )
+//        listView.adapter = arrayAdapter
+
+        listView.setOnItemClickListener { parent, view, position, id ->
+            Log.d("TAG", "Item Selected: " + names[position])
+        }
+
+        return view
     }
 
     companion object {
