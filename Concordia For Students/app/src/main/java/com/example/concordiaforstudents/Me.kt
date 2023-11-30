@@ -9,6 +9,13 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.example.concordiaforstudents.adapters.CustomArrayAdapter
+import com.example.concordiaforstudents.meFragments.AccountBalanceFragment
+import com.example.concordiaforstudents.meFragments.AccountDetailsFragment
+import com.example.concordiaforstudents.meFragments.GradesFragment
+import com.example.concordiaforstudents.meFragments.MessagesFragment
+import com.example.concordiaforstudents.meFragments.MyConcordiaFragment
+import com.example.concordiaforstudents.meFragments.ScheduleFragment
+import com.example.concordiaforstudents.meFragments.TaskListFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -64,9 +71,32 @@ class Me : Fragment() {
 
         listView.setOnItemClickListener { parent, view, position, id ->
             Log.d("TAG", "Item Selected: " + names[position])
+
+            navigateToFragment(position)
         }
 
         return view
+    }
+
+    private fun navigateToFragment(position: Int) {
+        val fragmentManager = requireActivity().supportFragmentManager
+        val transaction = fragmentManager.beginTransaction()
+        Log.d("TAG", "Position: $position")
+        // Use a when statement to determine which fragment to navigate to based on position
+        val fragment = when (position) {
+            0 -> ScheduleFragment()
+            1 -> GradesFragment()
+            2 -> MyConcordiaFragment()
+            3 -> TaskListFragment()
+            4 -> MessagesFragment()
+            5 -> AccountDetailsFragment()
+            6 -> AccountBalanceFragment()
+            // Add more cases as needed
+            else -> throw IllegalArgumentException("Invalid position: $position")
+        }
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.addToBackStack(null)  // Optional: Add to back stack if you want to navigate back
+        transaction.commit()
     }
 
     companion object {
