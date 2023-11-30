@@ -8,5 +8,7 @@
     <ListView
         android:id="@+id/list_view_me"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="73dp" />
 </FrameLayout>
