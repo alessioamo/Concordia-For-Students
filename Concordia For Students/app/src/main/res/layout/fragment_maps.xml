@@ -5,6 +5,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.concordiaforstudents.campusFragments.MapsFragment">
 
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tilesource="MAPNIK"
+        android:layout_above="@+id/bottomControls" />
+
+    <!-- Add any other UI controls or layouts as needed -->
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <!-- Add your additional controls here -->
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -13,13 +32,31 @@
         android:text="MAPS"
         android:textSize="24dp"
         android:textColor="@color/white"
-        android:background="@color/burgundy"/>
+        android:background="@color/burgundy"
+        android:layout_above="@+id/mapView"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maps"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:layout_marginTop="51dp"
+        android:text="Downtown"
         android:textSize="24dp"
-        android:layout_gravity="center"/>
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/orangedark"
+        android:layout_marginRight="205dp"
+        android:layout_above="@+id/mapView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:layout_marginTop="51dp"
+        android:text="Loyola"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@color/orangelight"
+        android:layout_marginLeft="205dp"
+        android:layout_above="@+id/mapView"/>
 
 </FrameLayout>

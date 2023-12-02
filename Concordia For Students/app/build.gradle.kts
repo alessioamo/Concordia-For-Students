@@ -56,4 +56,11 @@ dependencies {
     // Navigation Implementation
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+
+    // Maps Implementation
+    implementation ("org.osmdroid:osmdroid-android:6.1.11")
+    implementation ("org.osmdroid:osmdroid-geopackage:6.1.11")
+    implementation ("org.osmdroid:osmdroid-mapsforge:6.1.11")
+
+
 }
