@@ -48,18 +48,16 @@ class Moodle : Fragment() {
         val view = inflater.inflate(R.layout.fragment_moodle, container, false)
 
         val listView = view.findViewById<ListView>(R.id.list_view_moodle)
-        val names = arrayOf("Documents", "Grades", "Participants", "Competencies", "Messages",
-            "Preferences", "Dashboard","Other Classes")
+        val names = arrayOf("Other Classes", "Documents", "Grades", "Participants", "Competencies", "Messages")
 
         val icons = arrayOf(
+            R.drawable.baseline_class_24,
             R.drawable.baseline_article_24,
             R.drawable.baseline_percent_24,
             R.drawable.baseline_people_24,
             R.drawable.baseline_checklist_24,
             R.drawable.baseline_message_24,
-            R.drawable.baseline_settings_applications_24,
-            R.drawable.baseline_dashboard_24,
-            R.drawable.baseline_class_24
+//            R.drawable.baseline_dashboard_24
             // Add more icon resource IDs as needed
         )
 
@@ -87,14 +85,14 @@ class Moodle : Fragment() {
         Log.d("TAG", "Position: $position")
         // Use a when statement to determine which fragment to navigate to based on position
         val fragment = when (position) {
-            0 -> DocumentsFragment()
-            1 -> GradesFragment()
-            2 -> ParticipantsFragment()
-            3 -> CompetenciesFragment()
-            4 -> MessagesFragment()
-            5 -> PreferencesFragment()
-            6 -> DashboardFragment()
-            7 -> OtherClassesFragment()
+            0 -> OtherClassesFragment()
+            1 -> DocumentsFragment()
+            2 -> GradesFragment()
+            3 -> ParticipantsFragment()
+            4 -> CompetenciesFragment()
+            5 -> MessagesFragment()
+//            6 -> DashboardFragment()
+
             // Add more cases as needed
             else -> throw IllegalArgumentException("Invalid position: $position")
         }
