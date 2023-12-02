@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.concordiaforstudents.meFragments.TaskListFragment">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/task_list_title"
         android:layout_width="match_parent"
         android:layout_height="51dp"
+        android:background="@color/burgundy"
         android:gravity="center"
         android:text="TASK LIST"
-        android:textSize="24dp"
         android:textColor="@color/white"
-        android:background="@color/burgundy"/>
+        android:textSize="24dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/list1_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Task List"
-        android:textSize="24dp"
-        android:layout_gravity="center"/>
+        android:background="#A9A9A9"
+        android:text="Due Today"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
 
-</FrameLayout>
+    <ListView
+        android:id="@+id/task_list1"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:textSize="24dp"></ListView>
+
+    <TextView
+        android:id="@+id/list2_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A9A9A9"
+        android:text="Due Tomorrow"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ListView
+        android:id="@+id/task_list2"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:textSize="24dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/list3_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A9A9A9"
+        android:text="Due Friday"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ListView
+        android:id="@+id/task_list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:textSize="24dp">
+    </ListView>
+
+</LinearLayout>
