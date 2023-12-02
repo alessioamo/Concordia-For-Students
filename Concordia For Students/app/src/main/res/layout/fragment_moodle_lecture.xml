@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.concordiaforstudents.moodleFragments.CompetenciesFragment">
+    tools:context="com.example.concordiaforstudents.moodleFragments.LectureFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No competencies have been linked to this course"
+        android:text="Lecture Notes"
         android:textSize="24dp"
         android:gravity="center"
         android:layout_gravity="center"/>
