@@ -1,12 +1,14 @@
 package com.example.concordiaforstudents.meFragments
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
-import androidx.fragment.app.Fragment
 import android.widget.SimpleAdapter
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.example.concordiaforstudents.R
 
 class TaskListFragment : Fragment() {
@@ -70,6 +72,14 @@ class TaskListFragment : Fragment() {
         taskList2.adapter = adapter2
         taskList3.adapter = adapter3
 
+        // Set background color for the colored views
+        setColoredViewBackground(view, R.id.side_color1, Color.RED)
+        setColoredViewBackground(view, R.id.side_color2, Color.BLUE)
+        setColoredViewBackground(view, R.id.side_color3, Color.MAGENTA)
+        setColoredViewBackground(view, R.id.side_color1_list2, Color.YELLOW)
+        setColoredViewBackground(view, R.id.side_color2_list2, Color.GREEN)
+        setColoredViewBackground(view, R.id.side_color1_list3, Color.YELLOW)
+
         return view
     }
 
@@ -78,5 +88,10 @@ class TaskListFragment : Fragment() {
         taskMap["task"] = task
         taskMap["subtask"] = subtask
         return taskMap
+    }
+
+    private fun setColoredViewBackground(view: View, resourceId: Int, color: Int) {
+        val coloredView = view.findViewById<View>(resourceId)
+        coloredView.setBackgroundColor(color)
     }
 }
