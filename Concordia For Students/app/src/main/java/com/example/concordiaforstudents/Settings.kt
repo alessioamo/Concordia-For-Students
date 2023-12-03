@@ -72,7 +72,7 @@ class Settings : Fragment() {
         // Set text color to white for relevant TextViews
         logoutButton.setTextColor(resources.getColor(R.color.darkmodetext))
         darkModeSwitch.setTextColor(resources.getColor(R.color.darkmodetext))
-        settingsTitle.setBackgroundColor(resources.getColor(R.color.darkmodetext))
+        // settingsTitle.setBackgroundColor(resources.getColor(R.color.darkmodetext))
 
         // Set tint for the ImageView
         imageView.setColorFilter(resources.getColor(R.color.darkmodetext))
