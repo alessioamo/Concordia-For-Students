@@ -13,6 +13,7 @@ import com.example.concordiaforstudents.meFragments.AccountBalanceFragment
 import com.example.concordiaforstudents.meFragments.AccountDetailsFragment
 import com.example.concordiaforstudents.meFragments.GradesFragment
 import com.example.concordiaforstudents.meFragments.MessagesFragment
+import com.example.concordiaforstudents.meFragments.CourseRegistrationFragment
 import com.example.concordiaforstudents.meFragments.MyConcordiaFragment
 import com.example.concordiaforstudents.meFragments.ScheduleFragment
 import com.example.concordiaforstudents.meFragments.TaskListFragment
@@ -48,11 +49,12 @@ class Me : Fragment() {
         val view = inflater.inflate(R.layout.fragment_me, container, false)
 
         val listView = view.findViewById<ListView>(R.id.list_view_me)
-        val names = arrayOf("Schedule", "Grades", "MyConcordia", "Task List", "Messages", "Account Details", "Account Balance")
+        val names = arrayOf("Schedule", "Grades", "Course Registration", "MyConcordia", "Task List", "Messages", "Account Details", "Account Balance")
 
         val icons = arrayOf(
             R.drawable.baseline_calendar_month_24,
             R.drawable.baseline_percent_24,
+            R.drawable.baseline_app_registration_24,
             R.drawable.baseline_web_24,
             R.drawable.baseline_checklist_24,
             R.drawable.baseline_message_24,
@@ -86,11 +88,12 @@ class Me : Fragment() {
         val fragment = when (position) {
             0 -> ScheduleFragment()
             1 -> GradesFragment()
-            2 -> MyConcordiaFragment()
-            3 -> TaskListFragment()
-            4 -> MessagesFragment()
-            5 -> AccountDetailsFragment()
-            6 -> AccountBalanceFragment()
+            2 -> CourseRegistrationFragment()
+            3 -> MyConcordiaFragment()
+            4 -> TaskListFragment()
+            5 -> MessagesFragment()
+            6 -> AccountDetailsFragment()
+            7 -> AccountBalanceFragment()
             // Add more cases as needed
             else -> throw IllegalArgumentException("Invalid position: $position")
         }
