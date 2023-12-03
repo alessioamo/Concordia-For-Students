@@ -6,13 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.example.concordiaforstudents.adapters.CustomArrayAdapter
 import com.example.concordiaforstudents.meFragments.AccountBalanceFragment
 import com.example.concordiaforstudents.meFragments.AccountDetailsFragment
 import com.example.concordiaforstudents.meFragments.GradesFragment
-import com.example.concordiaforstudents.meFragments.MessagesFragment
 import com.example.concordiaforstudents.meFragments.CourseRegistrationFragment
 import com.example.concordiaforstudents.meFragments.MyConcordiaFragment
 import com.example.concordiaforstudents.meFragments.ScheduleFragment
@@ -49,7 +47,7 @@ class Me : Fragment() {
         val view = inflater.inflate(R.layout.fragment_me, container, false)
 
         val listView = view.findViewById<ListView>(R.id.list_view_me)
-        val names = arrayOf("Schedule", "Grades", "Course Registration", "MyConcordia", "Task List", "Messages", "Account Details", "Account Balance")
+        val names = arrayOf("Schedule", "Grades", "Course Registration", "MyConcordia", "Task List", "Account Details", "Account Balance")
 
         val icons = arrayOf(
             R.drawable.baseline_calendar_month_24,
@@ -57,7 +55,6 @@ class Me : Fragment() {
             R.drawable.baseline_app_registration_24,
             R.drawable.baseline_web_24,
             R.drawable.baseline_checklist_24,
-            R.drawable.baseline_message_24,
             R.drawable.baseline_account_circle_24,
             R.drawable.baseline_attach_money_24,
             // Add more icon resource IDs as needed
@@ -91,9 +88,8 @@ class Me : Fragment() {
             2 -> CourseRegistrationFragment()
             3 -> MyConcordiaFragment()
             4 -> TaskListFragment()
-            5 -> MessagesFragment()
-            6 -> AccountDetailsFragment()
-            7 -> AccountBalanceFragment()
+            5 -> AccountDetailsFragment()
+            6 -> AccountBalanceFragment()
             // Add more cases as needed
             else -> throw IllegalArgumentException("Invalid position: $position")
         }
