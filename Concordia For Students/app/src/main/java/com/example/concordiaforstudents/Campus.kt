@@ -22,7 +22,6 @@ import com.example.concordiaforstudents.campusFragments.ShuttleScheduleFragment
 import com.example.concordiaforstudents.meFragments.AccountBalanceFragment
 import com.example.concordiaforstudents.meFragments.AccountDetailsFragment
 import com.example.concordiaforstudents.meFragments.GradesFragment
-import com.example.concordiaforstudents.meFragments.MessagesFragment
 import com.example.concordiaforstudents.meFragments.MyConcordiaFragment
 import com.example.concordiaforstudents.meFragments.ScheduleFragment
 import com.example.concordiaforstudents.meFragments.TaskListFragment
