@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:text="COMPETENCIES"
+        android:text="Lecture"
         android:textSize="24dp"
         android:textColor="@color/white"
         android:background="@color/burgundy"/>

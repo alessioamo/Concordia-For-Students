@@ -17,31 +17,49 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="530dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="150dp"
-        android:layout_marginTop="120dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="150dp">
+
         <TableRow>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/burgundy"
                 android:text="First Name/Surname"
-                android:textSize="20dp"
                 android:textColor="@color/white"
-                android:background="@color/burgundy"
-            />
+                android:textSize="20dp" />
+
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/burgundy"
                 android:text="Roles"
-                android:textSize="20dp"
                 android:textColor="@color/white"
-                android:background="@color/burgundy"
-            />
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aryana Davin Simms"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Student"
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
@@ -60,29 +78,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Student"
-                android:textSize="20dp" />
-        </TableRow>
-        <TableRow>
-
-            <TextView
-                android:layout_width="15dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Hunter Myranda Brinley"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
@@ -90,17 +93,18 @@
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/black"
                 android:text="Teacher"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Shon Cook"
                 android:textSize="20dp" />
 
             <TextView
@@ -110,13 +114,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Rosa Rosario"
                 android:textSize="20dp" />
 
             <TextView
@@ -126,13 +131,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Erin Duarte"
                 android:textSize="20dp" />
 
             <TextView
@@ -142,13 +148,14 @@
                 android:text="Teaching Assistant"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Pat Cisneros"
                 android:textSize="20dp" />
 
             <TextView
@@ -158,13 +165,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Christi Case"
                 android:textSize="20dp" />
 
             <TextView
@@ -174,13 +182,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Luz Mcconnell"
                 android:textSize="20dp" />
 
             <TextView
@@ -190,13 +199,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Hans Walsh"
                 android:textSize="20dp" />
 
             <TextView
@@ -206,13 +216,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Mike Atkinson"
                 android:textSize="20dp" />
 
             <TextView
@@ -222,13 +233,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Jared Stevenson"
                 android:textSize="20dp" />
 
             <TextView
@@ -238,13 +250,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Jordan Davis"
                 android:textSize="20dp" />
 
             <TextView
@@ -254,13 +267,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Colby Hatfield"
                 android:textSize="20dp" />
 
             <TextView
@@ -270,13 +284,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Steve Ericsson"
                 android:textSize="20dp" />
 
             <TextView
@@ -286,13 +301,14 @@
                 android:text="Student"
                 android:textSize="20dp" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="John Doe"
+                android:text="Domingo Mullen"
                 android:textSize="20dp" />
 
             <TextView
@@ -300,6 +316,25 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Student"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="..."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="1 of 5"
                 android:textSize="20dp" />
         </TableRow>
     </TableLayout>
