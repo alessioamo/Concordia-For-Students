@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.concordiaforstudents.campusFragments.ShuttleScheduleFragment">
 
     <TextView
@@ -15,11 +16,327 @@
         android:textColor="@color/white"
         android:background="@color/burgundy"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:text="Shuttle Schedule"
-        android:textSize="24dp"
-        android:layout_gravity="center"/>
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="220dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Next Departures"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text="     From Loyola     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text="     From S.G.W.     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="3 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="10 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <TableRow>
+            <!-- Row 2, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="33 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 2, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="40 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+
+        <!-- Repeat for Rows 2-10 -->
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="00dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Monday - Thursday"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text="     From Loyola     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text="     From S.G.W.     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="7:30"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="7:45"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="7:45"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:05"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:00"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:20"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:20"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:35"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:35"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:55"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+
+        <!-- Repeat for Rows 2-10 -->
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="-280dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Friday"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text="     From Loyola     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text="     From S.G.W.     "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="7:45"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="7:45"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:20"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:20"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:55"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="8:55"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="9:10"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="9:30"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="10:20"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="10:05"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+
+        <!-- Repeat for Rows 2-10 -->
+
+    </TableLayout>
 
 </FrameLayout>

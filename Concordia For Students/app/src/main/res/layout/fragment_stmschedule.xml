@@ -16,10 +16,288 @@
         android:background="@color/burgundy"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STM Schedule"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:layout_marginTop="51dp"
+        android:text="Metro"
         android:textSize="24dp"
-        android:layout_gravity="center"/>
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/orangedark"
+        android:layout_marginRight="270dp"
+        android:layout_above="@+id/mapView"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/mapView"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="51dp"
+        android:background="@color/orangelight"
+        android:gravity="center"
+        android:text="Bus"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:layout_marginTop="51dp"
+        android:text="Train"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@color/orangelight"
+        android:layout_marginLeft="275dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:text="Select a Line: "
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="240dp"/>
+
+    <Spinner
+        android:id="@+id/metroSpinner"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="250dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:text="Select a Station: "
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="200dp"/>
+
+    <Spinner
+        android:id="@+id/metroSpinnerStation"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="210dp"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="70dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Next Departures"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text="  Towards Montorency  "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text="  Towards Côte Vertu  "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="2 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="4 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <TableRow>
+            <!-- Row 2, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="8 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 2, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="10 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <TableRow>
+            <!-- Row 2, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="14 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 2, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="16 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+        <TableRow>
+            <!-- Row 2, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="22 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 2, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="24 Minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="110dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Frequency of Departures (Week)"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text=" 7am to 9am + 4pm to 6pm "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text=" Morning, Day, Evening "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="Every 2 to 7 minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="Every 3 to 8 minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="240dp">
+
+        <!-- Title Row -->
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Frequency of Departures (Week-End)"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkblue"/>
+        </TableRow>
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:text=" 7am to 9am + 4pm to 6pm "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+            <TextView
+                android:gravity="center"
+                android:text=" Morning, Day, Evening "
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"/>
+        </TableRow>
+
+        <!-- Rows 1-10 -->
+        <TableRow>
+            <!-- Row 1, Cell 1 -->
+            <TextView
+                android:gravity="center"
+                android:text="Every 6 to 10 minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+            <!-- Row 1, Cell 2 -->
+            <TextView
+                android:gravity="center"
+                android:text="Every 6 to 10 minutes"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@drawable/cell_background"/>
+        </TableRow>
+    </TableLayout>
+
 
 </FrameLayout>
