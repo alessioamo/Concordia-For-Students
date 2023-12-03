@@ -9,4 +9,5 @@
     <color name="orange">#f5813b</color>
     <color name="cyan">#139ebd</color>
     <color name="lightgreen">#24c68b</color>
+    <color name="darkmodetext">#dd7085</color>
 </resources>

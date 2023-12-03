@@ -1,59 +1,148 @@
 package com.example.concordiaforstudents
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.Switch
+import android.widget.Spinner
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import com.example.concordiaforstudents.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Settings.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Settings : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var darkModeSwitch: Switch
+    private lateinit var languageSpinner: Spinner
+    private lateinit var logoutButton: TextView
+    private lateinit var settingsContainer: ViewGroup // The container of the entire settings layout
+    private lateinit var settingsTitle: TextView
+    private lateinit var imageView: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        settingsContainer = view.findViewById(R.id.settingsContainer)
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Settings.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Settings().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Initialize views
+        darkModeSwitch = view.findViewById(R.id.darkModeSwitch)
+        languageSpinner = view.findViewById(R.id.languageSpinner)
+        logoutButton = view.findViewById(R.id.logoutButton)
+        settingsTitle = view.findViewById(R.id.textView)
+        imageView = view.findViewById(R.id.arrowLogout)
+
+        darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            // Handle dark mode switch changes here
+            if (isChecked) {
+                // Enable dark mode
+                enableDarkMode()
+            } else {
+                // Disable dark mode
+                disableDarkMode()
             }
+        }
+
+        // Populate the language spinner
+        val languages = arrayOf("English", "French")
+        val adapter =
+            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, languages)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        languageSpinner.adapter = adapter
+
+        // Set click listener for logout button
+        logoutButton.setOnClickListener {
+            // Handle logout button click here
+        }
     }
+
+    private fun enableDarkMode() {
+        // Change background to gray when dark mode is enabled
+        settingsContainer.setBackgroundColor(resources.getColor(android.R.color.system_background_dark))
+
+        // Set text color to white for relevant TextViews
+        logoutButton.setTextColor(resources.getColor(R.color.darkmodetext))
+        darkModeSwitch.setTextColor(resources.getColor(R.color.darkmodetext))
+        settingsTitle.setBackgroundColor(resources.getColor(R.color.darkmodetext))
+
+        // Set tint for the ImageView
+        imageView.setColorFilter(resources.getColor(R.color.darkmodetext))
+
+
+        // Set text color for the spinner items
+        val languages = arrayOf("English", "French")
+        val adapter = ArrayAdapter(
+            requireContext(),
+            android.R.layout.simple_spinner_item,
+            languages
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        languageSpinner.adapter = object : ArrayAdapter<String>(
+            requireContext(),
+            android.R.layout.simple_spinner_dropdown_item,
+            languages
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                (view as? TextView)?.setTextColor(resources.getColor(R.color.darkmodetext))
+                return view
+            }
+
+            override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getDropDownView(position, convertView, parent)
+                (view as? TextView)?.setTextColor(resources.getColor(R.color.darkmodetext))
+                return view
+            }
+        }
+    }
+
+
+    private fun disableDarkMode() {
+        // Change background back to normal when dark mode is disabled
+        settingsContainer.setBackgroundColor(resources.getColor(android.R.color.white))
+
+        // Set text color back to normal for relevant TextViews
+        logoutButton.setTextColor(resources.getColor(R.color.burgundy))
+        darkModeSwitch.setTextColor(resources.getColor(R.color.burgundy))
+        settingsTitle.setBackgroundColor(resources.getColor(R.color.burgundy))
+
+        // Set tint for the ImageView
+        imageView.setColorFilter(resources.getColor(R.color.burgundy))
+
+        // Set text color for the spinner items
+        val languages = arrayOf("English", "French")
+        val adapter = ArrayAdapter(
+            requireContext(),
+            android.R.layout.simple_spinner_item,
+            languages
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        languageSpinner.adapter = object : ArrayAdapter<String>(
+            requireContext(),
+            android.R.layout.simple_spinner_dropdown_item,
+            languages
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                (view as? TextView)?.setTextColor(resources.getColor(R.color.burgundy))
+                return view
+            }
+
+            override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getDropDownView(position, convertView, parent)
+                (view as? TextView)?.setTextColor(resources.getColor(R.color.burgundy))
+                return view
+            }
+        }
+    }
+
 }
