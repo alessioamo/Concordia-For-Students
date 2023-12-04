@@ -30,7 +30,50 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="Course"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Credits"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="Grade"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="GPA"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -39,11 +82,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="3"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
             android:text="A"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="4.0"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -55,7 +116,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -64,11 +125,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="3"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
             android:text="C"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="2.0"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -80,7 +159,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -89,11 +168,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="3"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
             android:text="B"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="3.0"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -103,6 +200,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="271dp"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="Term GPA"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -112,6 +218,7 @@
             android:text="3.0"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
+
 
     </LinearLayout>
 
@@ -129,7 +236,50 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="Course"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Credits"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="Grade"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="GPA"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -138,11 +288,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="4"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
-            android:text="A"
+            android:text="A-"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="3.70"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -154,7 +322,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -163,11 +331,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="3"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
-            android:text="C"
+            android:text="B-"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="2.7"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -179,7 +365,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="202dp"
+            android:layout_width="150dp"
             android:layout_height="30dp"
             android:gravity="left|center"
             android:paddingLeft="10dp"
@@ -188,11 +374,29 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="3"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
-            android:text="B"
+            android:text="B+"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="3.3"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
@@ -204,11 +408,20 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_width="271dp"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="Term GPA"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="right|center"
             android:paddingRight="10dp"
-            android:text="3.0"
+            android:text="3.28"
             android:textColor="@color/burgundy"
             android:textSize="20dp"/>
 
