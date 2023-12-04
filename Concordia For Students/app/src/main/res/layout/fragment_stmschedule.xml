@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="52dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginBottom="70dp">
 
         <!-- Title Row -->
@@ -112,7 +112,7 @@
         <TableRow>
             <TextView
                 android:gravity="center"
-                android:text="  Towards Montorency  "
+                android:text="  Towards Montmorency  "
                 android:textSize="18dp"
                 android:textColor="@android:color/white"
                 android:background="@android:color/holo_blue_dark"/>
@@ -196,7 +196,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="110dp">
 
         <!-- Title Row -->
@@ -214,7 +214,7 @@
         <TableRow>
             <TextView
                 android:gravity="center"
-                android:text=" 7am to 9am + 4pm to 6pm "
+                android:text=" 7am-9am + 4pm-6pm "
                 android:textSize="18dp"
                 android:textColor="@android:color/white"
                 android:background="@android:color/holo_blue_dark"/>
@@ -250,7 +250,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="240dp">
 
         <!-- Title Row -->
@@ -268,7 +268,7 @@
         <TableRow>
             <TextView
                 android:gravity="center"
-                android:text=" 7am to 9am + 4pm to 6pm "
+                android:text=" 7am-9am + 4pm-6pm "
                 android:textSize="18dp"
                 android:textColor="@android:color/white"
                 android:background="@android:color/holo_blue_dark"/>
