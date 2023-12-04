@@ -23,19 +23,96 @@
         android:layout_width="412dp"
         android:layout_height="62dp"
         android:layout_gravity="center"
-        android:paddingLeft="20dp"
+        android:paddingLeft="30dp"
         android:text="Dark Mode"
         android:textColor="@color/burgundy"
         android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/languageSpinner"
+    <LinearLayout
+        android:id="@+id/languageButtonContainer"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:paddingLeft="20dp"
-        android:scrollbarTrackVertical="@android:drawable/arrow_down_float"
-        android:textSize="20sp"
-        android:textColor="@color/burgundy"/>
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/languageButton"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Language"
+            android:textSize="20sp"
+            android:textColor="@color/burgundy"/>
+
+        <TextView
+            android:id="@+id/languageOptionButton"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingLeft="20dp"
+            android:text="English"
+            android:textSize="20sp"
+            android:textColor="@color/burgundy"/>
+
+
+        <ImageView
+            android:id="@+id/arrowLanguage"
+            android:layout_width="31dp"
+            android:layout_height="48dp"
+            android:alpha="5"
+            android:contentDescription="Arrow"
+            android:rotation="270"
+            app:srcCompat="@android:drawable/arrow_down_float"
+            app:tint="@color/burgundy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notificationButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notificationButton"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Notification"
+            android:textSize="20sp"
+            android:textColor="@color/burgundy"/>
+        <TextView
+            android:id="@+id/notificationOptionButton"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingLeft="20dp"
+            android:text="All"
+            android:textSize="20sp"
+            android:textColor="@color/burgundy"/>
+
+        <ImageView
+            android:id="@+id/arrownotification"
+            android:layout_width="31dp"
+            android:layout_height="48dp"
+            android:alpha="5"
+            android:contentDescription="Arrow"
+            android:rotation="270"
+            app:srcCompat="@android:drawable/arrow_down_float"
+            app:tint="@color/burgundy" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/logoutButtonContainer"
@@ -43,6 +120,7 @@
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
         android:gravity="center_vertical"
+        android:padding="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -67,6 +145,19 @@
             app:tint="@color/burgundy" />
 
     </LinearLayout>
+
+    <!-- Button for Support -->
+    <Button
+        android:id="@+id/supportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="300dp"
+        android:text="Support"
+        android:textColor="@color/burgundy"
+        android:textSize="20sp" />
 
 
 </LinearLayout>
