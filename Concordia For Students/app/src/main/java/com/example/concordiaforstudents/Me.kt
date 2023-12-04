@@ -47,7 +47,7 @@ class Me : Fragment() {
         val view = inflater.inflate(R.layout.fragment_me, container, false)
 
         val listView = view.findViewById<ListView>(R.id.list_view_me)
-        val names = arrayOf("Schedule", "Grades", "Course Registration", "MyConcordia", "Task List", "Account Details", "Account Balance")
+        val names = arrayOf("Schedule", "Transcript", "Course Registration", "MyConcordia", "Task List", "Account Details", "Account Balance")
 
         val icons = arrayOf(
             R.drawable.baseline_calendar_month_24,

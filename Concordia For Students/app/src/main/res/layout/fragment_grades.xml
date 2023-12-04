@@ -1,25 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.concordiaforstudents.meFragments.GradesFragment">
+    tools:context="com.example.concordiaforstudents.meFragments.GradesFragment"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:text="GRADES"
+        android:text="TRANSCRIPT"
         android:textSize="24dp"
         android:textColor="@color/white"
         android:background="@color/burgundy"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Grades"
-        android:textSize="24dp"
-        android:layout_gravity="center"/>
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Fall 2024"
+        android:background="#A9A9A9"
+        android:textColor="#455A64"
+        android:textSize="24dp"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="COMP 218"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="A"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="MATH 204"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="C"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="COMP 248"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="B"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="3.0"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Summer 2023"
+        android:background="#A9A9A9"
+        android:textColor="#455A64"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="COMP 118"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="A"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="MATH 111"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="C"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="COMP 010"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="B"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:text="3.0"
+            android:textColor="@color/burgundy"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CGPA 3.0"
+        android:gravity="center|bottom"
+        android:paddingBottom="90dp"
+        android:textSize="24dp"
+        android:textColor="@color/burgundy"/>
+
+
+
+</LinearLayout>
